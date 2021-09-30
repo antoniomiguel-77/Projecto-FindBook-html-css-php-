@@ -1,0 +1,409 @@
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans"; 
+}
+html{
+    scroll-behavior:smooth;
+}
+label{
+    color: #fff;
+}
+ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+li{
+    display: inline;
+}
+/*Links do menu*/
+.link_menu{
+     text-decoration: none;
+     color: #fff;
+     padding: .5rem; 
+     transition: 1s;
+}
+
+.link_menu:hover{ 
+    background-color: #fff; 
+    color: #043E95;
+}
+/*Tamanho da capa do livro*/
+.capa{
+    width:150px;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding:.3rem;
+}
+/*FIM DO RESET*/
+
+/*CABECALHO*/
+.topo{
+    background-color: #043E95;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding:0 .5rem;
+    
+   
+}
+.logar{
+    align-self: flex-start;
+    margin-top:1rem; 
+}
+.logo{
+    display: flex;
+    align-items: center;
+ 
+}
+.menu ul li{
+    margin:0 .2rem
+}
+ 
+/*BREAK-POINT*/
+ @media(max-width:700px){
+    .topo{
+        display: flex;
+        flex-flow: wrap;
+    }
+    
+ }
+
+/*FIM BREAK-POINT*/
+
+/*FIM DO CABECALHO*/
+
+/*CORPO DA PAGINA*/
+
+/*formuário de pesquisa*/
+.form_search{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+input{
+    width: 50%;
+    height: 2rem;
+    font-size: 20px;
+}
+button{
+      width: 10%; 
+      text-transform: uppercase;
+      color: #fff;
+      background-color:#043E95 ;
+      border: none;
+      margin: 0 .5rem;
+      cursor: pointer;
+      border-radius: .5rem;
+      opacity: .9;
+      
+}
+button:hover{
+    opacity: 1;
+    font-weight: bolder;
+}
+ /*AREA DOS LIVROS*/
+ .livros{
+    display: flex; 
+    justify-content: space-around; 
+    margin: 2rem auto;
+    max-width: 900px; 
+    flex-wrap: wrap;
+ }
+ .livros div{
+    background-color: #043E95;
+    color: #fff;
+    padding: 2rem;
+    border-radius: .3rem;
+    margin:1rem 0;
+ }
+ .livros div img{
+    margin-left: 1.5rem;
+    width: 150px;
+    height: 150px;
+}
+ .livros div p{
+    margin: .5rem 0;
+    font-size: 14px;
+}
+ .livros div a{
+     margin-top:2rem; 
+     font-weight: bolder;
+     font-size: 1.2rem;
+     border-radius: .2rem;
+     transition: 1s;
+}
+.livros div .btn_edit{
+background-color: #4caf50;
+opacity: .9;
+}
+.livros div .btn_delete{
+    background-color: #ff0000;
+    opacity: .9;
+}
+
+.livros div .btn_ler{
+    background-color: #26a69a;
+    opacity: .9;
+}
+.livros div .btn_baixar{
+    background-color: #1881d6;
+    opacity: .9;
+}
+/* Efeito hover nos botões*/
+.livros div .btn_edit:hover{
+    opacity: 1;
+}
+.livros div .btn_delete:hover{
+    
+    opacity: 1;
+}
+
+.livros div .btn_ler:hover{
+    opacity: 1;
+}
+.livros div .btn_baixar:hover{
+    
+    opacity: 1;
+}
+ 
+ 
+ .livros > div{
+    flex: 0 1 200px;
+ 
+ }
+
+
+ /*SOBRE A PAGINA*/
+.sobre{
+    background-color: #043E95;
+    width:60rem;
+    color: #fff;
+    margin: 2rem auto ;
+    padding: 2rem;
+    text-align: justify;
+    border-radius:.5rem;
+ 
+}
+.sobre h3{text-align: center;padding-bottom:1rem; text-transform: uppercase;}
+
+
+
+ /*FIM SOBRE A PAGINA*/
+
+ /*AREA DE CONTACTO*/
+.area_contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #043E95;
+    color: #fff;
+    
+}
+.area_contato h3{
+    text-transform: uppercase; 
+    margin:1rem 0
+}
+.contato_campos{  
+    width: 50rem;
+    margin:.5rem 0 ;
+    font-size: 25px;
+}
+.btn_contato_campos{
+    background-color: #fff;
+    color: #043E95;
+    margin:.5rem 0;
+    width: 50rem;
+    height: 2rem;
+}
+ 
+
+ /*FIM DA AREA DE CONTACTO*/
+ 
+/* RODAPE*/
+.rodape{
+    background-color: #043E95;
+    margin-top: 2rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.rodape h3{
+    padding: 2rem 0;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    margin: .5rem 0;
+}
+
+/*VOLTAR AO TOPO*/
+.top{
+
+  position: relative;
+  right:-45%;
+
+}
+ /*Tela-cadastro*/
+ .tela-cadastro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 800px;
+    background-color: #043E95;
+    margin:5rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+ 
+       
+ }
+ .tela-cadastro input{
+    width: 50rem;margin:.5rem 0 ; font-size: 25px;
+ }
+ .tela-cadastro button{
+background-color: #fff; color: #043E95; margin:.5rem 0;width: 50rem;height: 2rem;
+
+ }
+ .tela-cadastro h1{color: #fff; text-transform: uppercase;}
+ .area_cad{
+     display: flex;
+     justify-content: space-around;
+ }
+ /*FIM DA TELA DE CADASTRO*/
+
+ /*TELA DE LOGIN*/
+.tela-login{
+   width: 20rem;
+   height: 20rem;
+   padding: 2rem;
+   margin: 5rem auto;
+   background-color: #043E95;
+   color: #fff;
+   text-transform: uppercase;
+   border-radius: .5rem;
+ 
+}
+.tela-login input{
+    width: 100%;
+    margin:1rem 0;
+    font-size: 18px;
+}
+.tela-login input[type="submit"]{
+    opacity: .8;
+    transition: 1s; 
+    border:none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #fff;
+    color: #043E95;
+    height: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.tela-login input[type="submit"]:hover{
+    opacity: 1;
+}
+
+.tela-login p{
+    font-size: 14px;
+     margin-bottom: .5rem;
+      text-align: center;
+}
+.tela-login p a{
+     padding: .2rem;
+}
+
+
+ /*FIM DA TELA DE LOGIN*/
+
+ /*AREA DO ADMINISTRADOR*/
+ .area-adm{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #043E95;
+}
+.area-adm img{
+    width: 100px;
+    border-radius: 5rem;
+    margin-bottom: .5rem;
+}
+.area-adm > div{
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+}
+.links{
+    padding: 1rem; 
+}
+.links:hover{
+    background-color: #fff;
+    color: #043E95;
+}
+
+
+ /*FIM DA AREA DO ADMINISTRADOR*/
+
+ /*BREAKPOINT*/
+ @media(max-width:700px){
+    .livros{display: flex; flex-direction: column;}
+    .livros div{padding: .5rem 0;   margin:1rem auto; padding: .3rem;}
+    .livros div a{padding:0; font-size: .9rem; }
+    .contato_campos{  width: 25rem;margin:.5rem 0 ;font-size: 18px;}
+    .btn_contato_campos{background-color: #fff; color: #043E95; margin:.5rem 0;width: 25rem;height: 2rem;}
+    .livros div img{margin-left: .5rem; width: 150px; height: 150px;}
+    .tela-cadastro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    background-color: #043E95;
+    }
+
+    .tela-cadastro input{
+        width: 18rem;
+        margin:.5rem 0 ;
+        font-size: 14px;
+        margin-left: .4rem;
+     }
+     .tela-cadastro button{
+        background-color: #fff;
+        color: #043E95; 
+        margin:.5rem 0;
+        width: 18rem;height: 2rem;
+        
+    }
+    .tela-cadastro h1{
+        margin-left: .5rem;
+    }
+
+    .btn-search{
+        font-size: 12px;
+        width: 5rem;
+    }
+    .sobre{
+        width:25rem;
+        text-align: justify;
+        border-radius:.5rem;
+    }
+    .sobre h3{text-align: center;}
+ }
+
+
+
+ /* AREA DE LEITURA */
+
+ 
+
+ 
+
+ 
